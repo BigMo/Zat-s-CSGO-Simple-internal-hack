@@ -124,7 +124,9 @@ BOOL APIENTRY DllMain(HMODULE hModule,
 			printf("> Thread could not be started\n");
 		break;
 	case DLL_THREAD_ATTACH:
+		break;
 	case DLL_THREAD_DETACH:
+		break;
 	case DLL_PROCESS_DETACH:
 		if (threadLoop)
 			CloseHandle(threadLoop);
