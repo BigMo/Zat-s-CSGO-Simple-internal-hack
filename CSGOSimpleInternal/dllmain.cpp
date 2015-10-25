@@ -39,9 +39,8 @@ DWORD WINAPI Loop(PVOID pThreadParameter)
 		Sleep(16);
 		localPlayer = lEngine.GetLocalPlayer();
 		if (!localPlayer) //LocalPlayer not initialized yet
-		{
 			continue;
-		}
+		
 		//Set spotted
 		for (int i = 0; i < 32; i++)
 		{
